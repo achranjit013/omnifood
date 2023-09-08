@@ -1,4 +1,26 @@
 /*************************************/
+/* MOBILE NAV */
+/*************************************/
+
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+
+  display: none;
+}
+
+.icon-mobile-nav {
+  height: 4.8rem;
+  width: 4.8rem;
+  color: #333;
+}
+
+.icon-mobile-nav[name="close-outline"] {
+  display: none;
+}
+
+/*************************************/
 /* HEADER */
 /*************************************/
 
@@ -11,6 +33,7 @@
   /* Because we want header to be sticky later, we set a fixed height */
   height: 9.6rem;
   padding: 0 4.8rem;
+  position: relative;
 }
 
 .logo {
@@ -23,10 +46,9 @@
 
 .main-nav-list {
   list-style: none;
-
   display: flex;
   align-items: center;
-  gap: 3.2rem;
+  gap: 4.8rem;
 }
 
 .main-nav-link:link,
@@ -283,7 +305,7 @@
 
 .meal-attribute {
   font-size: 1.8rem;
-
+  line-height: 1.2;
   display: flex;
   align-items: center;
   gap: 1.6rem;
@@ -342,6 +364,7 @@
 
 .gallery {
   display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 1.6rem;
   padding: 1.6rem;
 }
@@ -508,6 +531,7 @@
 
 .cta-form {
   display: grid;
+  grid-template-columns: repeat(2, 1fr);
   row-gap: 2.4rem;
   column-gap: 3.2rem;
 }
